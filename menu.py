@@ -9,11 +9,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         layout = QVBoxLayout()
-        self.texto = QLabel('label')
-        layout.addWidget(self.texto)
-        self.entrada = QLineEdit()
-        layout.addWidget(self.entrada)
-        boton = QPushButton('label')
+        
         boton.setDefault(True)
         layout.addWidget(boton)
         boton.clicked.connect(self.function_name)
